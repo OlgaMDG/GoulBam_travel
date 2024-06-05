@@ -1,0 +1,373 @@
+/*---------------------------------------- Recommadations générale -------------------------------------------*/
+
+/*Typographie couleur*/
+
+:root {
+    --bleu-vert-clair: #0DBDAD ;
+    --bleu-vert: #007073;
+    --bleu-transparent: rgba(0, 112, 115, 0.6);
+    --blanc: white;
+    --noir: black;
+    --noir-lucide: rgba(0, 0, 0, 0.6);
+    --gris-foncé: #333;
+    --gris-clair: gray;
+  }
+
+/*Font-family de la page*/
+
+.arsenal-regular {
+    font-family: "Arsenal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .arsenal-bold {
+    font-family: "Arsenal", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .arsenal-regular-italic {
+    font-family: "Arsenal", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .arsenal-bold-italic {
+    font-family: "Arsenal", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+/*-------------------------------------------- En-tête de page ----------------------------------------------------*/
+
+.menu>ul>li>a{
+  color: var(--bleu-vert);
+  font-weight: bold;
+}
+
+.menu>ul>li>a:hover{
+  color: var(--bleu-vert-clair);
+}
+
+ /* Menu hamburger icon */
+
+.navbar-toggler {
+  border-color: transparent !important; 
+}
+
+.navbar-toggler-icon {
+  background-image: none !important; 
+}
+
+.navbar-toggler-icon::before {
+  content: '';
+  display: block;
+  margin-top: 1em;
+  width: 22px;
+  height: 2px;
+  background-color: var(--bleu-vert-clair);
+  box-shadow: 0 6px 0 0 var(--bleu-vert-clair), 0 -6px 0 0 var(--bleu-vert-clair);
+}
+
+.navbar-toggler:hover .navbar-toggler-icon::before {
+  background-color: var(--bleu-vert);
+  box-shadow: 0 6px 0 0 var(--bleu-vert), 0 -6px 0 0 var(--bleu-vert);
+}
+
+/*-------------------------------------------- Page d'accueil ----------------------------------------------------*/
+
+.accueil {
+    background-image: url('../images/home1.JPG'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 83vh;
+    color: var(--blanc);
+}
+
+/*Font-family de la page*/
+
+.text_home {
+   font-size: 3em;
+   width: 70%;
+   line-height: 1;
+   font-family: 'arsenal-regular';
+}
+
+span{
+    font-weight:bold ;
+}
+
+.btn-primary {
+  background-color: var(--bleu-vert-clair) !important; 
+  color: var(--blanc); 
+  border-radius: 4em !important;
+  width: 30%;
+}
+
+.dest a{
+  color: var(--blanc);
+  text-decoration: none;
+}
+
+
+/*-------------------------------------------- Page de destinations ----------------------------------------------------*/
+
+/*Barre latérale*/
+
+.sidebar {
+    background-color: var(--bleu-vert-clair);
+    color: var(--blanc);
+    padding: 1em;
+    height: 100vh; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width:  20%; 
+}
+
+/*notre album*/
+
+.content {
+    margin-left:20%; 
+    height: auto;
+}
+.gallery-item {
+    margin-top: 3em;
+    text-align: center; 
+    color: var(--blanc);
+    font-weight: bold;
+}
+.gallery-item p {
+    text-align: justify;
+}
+
+.gallery-item img {
+    width: 90%;
+    height: 65%;
+    border-radius: 2em;
+}
+.gallery-title {
+    border-radius: 2em;
+    background-color: var(--noir-lucide); 
+    color: var(--blanc);
+    padding: 1em;
+    margin: -2em 1em 0 1em; 
+    position: relative;
+    bottom: 2em;
+}
+.album {
+    background-color: var(--bleu-vert);
+    height: auto;
+}
+
+.hidden-photos {
+    display: none; 
+}
+
+/*boutton central*/
+
+.btn-primary {
+    background-color: var(--bleu-vert-clair)!important; 
+    color: var(--blanc); 
+    border-radius: 4em !important;
+    width: 30%;
+}
+
+/*bouttons de navigation*/
+
+.arrow-up, .arrow-down {
+    position: fixed;
+    right: 1.5em;
+    font-size: 2em;
+    cursor: pointer;
+    color: var(--bleu-vert);
+    background-color: var(--bleu-vert-clair);
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 5px var(--bleu-vert-clair);
+}
+.arrow-up {
+    top: 1.2em;
+}
+.arrow-down {
+    bottom: 1.2em;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid transparent; 
+    transition: border 0.3s; 
+}
+a:hover, a:focus {
+    color: var(--blanc);
+    text-decoration: none;
+}
+
+/* Image survolée*/
+
+.gallery-item img {
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+  border: 2px solid var(--bleu-vert-clair);
+}
+
+/*lien google map*/
+.gmap{
+  text-decoration: underline;
+}
+
+/*-------------------------------------------- Page de contact ----------------------------------------------------*/
+
+#body-contact{
+  height: 100vh;
+}
+
+.contact{
+  background-color: var(--noir);
+  width: 100%;
+}
+
+.logo-contact>a>img{
+  width:  15em;
+}
+
+#contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.titre-contact{
+  text-align: center;
+  background-image: url("../images/photo4.jpg");
+  background-size: cover; 
+  background-position: center; 
+  height: 58vh;
+  padding-left: 2em;
+  color: var(--blanc);
+}
+
+.titre-text{
+  padding-top: 2em;
+  font-family: 'arsenal-regular';
+  font-size: 1.5em;
+}
+
+.span-contact{
+  color: var(--bleu-vert);
+}
+
+.coordonnee{
+  text-align: center;
+}
+
+.icon{
+  font-size: 1.5em; 
+  color: var(--bleu-vert);
+  transition: color 0.3s; 
+}
+
+.icon:hover {
+  color: var(--bleu-vert-clair); 
+}
+
+/*-------------------------------------------- Footer ----------------------------------------------------*/
+
+footer {
+  margin-top: auto;
+  background-color: var(--gris-foncé); 
+  color: var(--gris-clair); 
+  text-align: center;
+  padding: 0.5em 0.9em;
+}
+
+footer p {
+  margin: 0;
+}
+
+/*-------------------------------------------- Résponsive----------------------------------------------------*/
+
+/*Ecran1*/
+
+@media (max-width: 991.98px) {
+  .text_home{ 
+    font-size: 2.75em;
+  }
+  .dest a{
+    font-size: 90%;
+  }
+  nav button{
+    color: var(--bleu-vert);
+  }
+  .accueil button{
+    width: 50%;
+  }
+
+}
+
+/*Ecran2*/
+
+@media (max-width: 767.98px) {
+  .sidebar {
+      position: relative; 
+      width: 100%; 
+      height: auto; 
+  }
+  .content {
+      margin-left: 0; 
+      margin-top: 0; 
+      padding-top: 0; 
+  }
+  .text_home{ 
+      font-size: 2em;
+  }
+  .dest a{
+    font-size: 75%;
+  }
+  .accueil button{
+    width: 90%;
+  }
+}
+
+/*Ecran3*/
+
+@media (max-width: 575.98px) {
+  .sidebar {
+      position: relative; 
+      width: 100%; 
+      height: auto; 
+  }
+  .content {
+      margin-left: 0; 
+      margin-top: 0; 
+      padding-top: 0; 
+  }
+  .accueil {
+    background-image: none; 
+    background-color: var(--bleu-vert);
+  }
+  .accueil-logo{
+    width: 75%;
+  }
+  .text_home{ 
+    font-size: 2.5em;
+  }
+  .dest a{
+    font-size: 90%;
+  }
+  nav button{
+    color: var(--bleu-vert);
+  }
+  .accueil button{
+    width: 50%;
+  }
+}
